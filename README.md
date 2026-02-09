@@ -19,4 +19,4 @@ Models were trained on in-house growth inhibition screening datasets against com
 - Chemprop with RDKit features
 
 ## Installation
-Use of the ESKAPE model requires installation of Chemprop V1. Instructions for installing Chemprop V1 can be found [here] (https://github.com/chemprop/chemprop-v1-old-branches?tab=readme-ov-file#installation).
+Use of the ESKAPE model requires installation of Chemprop V1. Instructions for installing Chemprop V1 can be found [here](https://github.com/chemprop/chemprop-v1-old-branches?tab=readme-ov-file#installation).
