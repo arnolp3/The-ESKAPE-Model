@@ -1,4 +1,4 @@
-# The ESKAPE Model: open-source antibiotic discovery for everyone
+# The ESKAPE model: open-source antibiotic discovery for everyone
 
 The ESKAPE Model is a machine learning-based online resource to facilitate discovery of novel antibiotics against the ESKAPE pathogens, a group of multidrug-resistant bacteria that are responsible for the majority of hospital-acquired infections. These pathogens have been identified by the World Health Organization as priority pathogens for the research and development of new treatments.
 
