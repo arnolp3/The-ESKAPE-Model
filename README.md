@@ -18,7 +18,7 @@ Models were trained on in-house growth inhibition screening datasets against com
 - Chemprop graph neural network
 - Chemprop with RDKit features
 
-## Repository Contents
+### Repository Contents
 - Training Datasets
 - Models
 - Prediction Sets
@@ -28,5 +28,5 @@ Models were trained on in-house growth inhibition screening datasets against com
   - Generate t-SNE plots
   - k-means clustering
 
-## Try the ESKAPE model yourself!
+### Try the ESKAPE model yourself!
 The ESKAPE model website can be found [here](https://eskape.mcmaster.ca/). The website has a maximum input of 100 molecules. Instructions to run the ESKAPE model locally (with no input limit) can be found [here](https://github.com/raphenya/eskape-model-standalone).
