@@ -1,0 +1,423 @@
+Command line
+python sklearn_train.py --data_path /workspace/lab/stokeslab/arnolp3/ESKAPE/EF/EF_processed.csv --model_type random_forest --dataset_type classification --save_dir /workspace/lab/stokeslab/arnolp3/ESKAPE/EF/EF_rf --split_type cv --num_folds 10 --save_preds --save_smiles_splits --metric auc --extra_metrics prc-auc
+Args
+{'activation': 'ReLU',
+ 'adding_bond_types': True,
+ 'adding_h': False,
+ 'aggregation': 'mean',
+ 'aggregation_norm': 100,
+ 'atom_constraints': [],
+ 'atom_descriptor_scaling': True,
+ 'atom_descriptors': None,
+ 'atom_descriptors_path': None,
+ 'atom_descriptors_size': 0,
+ 'atom_features_size': 0,
+ 'atom_messages': False,
+ 'atom_targets': [],
+ 'batch_size': 50,
+ 'bias': False,
+ 'bias_solvent': False,
+ 'bond_constraints': [],
+ 'bond_descriptor_scaling': True,
+ 'bond_descriptors': None,
+ 'bond_descriptors_path': None,
+ 'bond_descriptors_size': 0,
+ 'bond_features_size': 0,
+ 'bond_targets': [],
+ 'cache_cutoff': 10000,
+ 'checkpoint_dir': None,
+ 'checkpoint_frzn': None,
+ 'checkpoint_path': None,
+ 'checkpoint_paths': None,
+ 'class_balance': False,
+ 'class_weight': None,
+ 'config_path': None,
+ 'constraints_path': None,
+ 'crossval_index_dir': None,
+ 'crossval_index_file': None,
+ 'crossval_index_sets': None,
+ 'cuda': True,
+ 'data_path': '/workspace/lab/stokeslab/arnolp3/ESKAPE/EF/EF_processed.csv',
+ 'data_weights_path': None,
+ 'dataset_type': 'classification',
+ 'depth': 3,
+ 'depth_solvent': 3,
+ 'device': device(type='cuda'),
+ 'dropout': 0.0,
+ 'empty_cache': False,
+ 'ensemble_size': 1,
+ 'epochs': 30,
+ 'evidential_regularization': 0,
+ 'explicit_h': False,
+ 'extra_metrics': ['prc-auc'],
+ 'features_generator': None,
+ 'features_only': False,
+ 'features_path': None,
+ 'features_scaling': True,
+ 'features_size': None,
+ 'ffn_hidden_size': 300,
+ 'ffn_num_layers': 2,
+ 'final_lr': 0.0001,
+ 'folds_file': None,
+ 'freeze_first_only': False,
+ 'frzn_ffn_layers': 0,
+ 'gpu': None,
+ 'grad_clip': None,
+ 'hidden_size': 300,
+ 'hidden_size_solvent': 300,
+ 'ignore_columns': None,
+ 'impute_mode': None,
+ 'init_lr': 0.0001,
+ 'is_atom_bond_targets': False,
+ 'keeping_atom_map': False,
+ 'log_frequency': 10,
+ 'loss_function': 'binary_cross_entropy',
+ 'max_data_size': None,
+ 'max_lr': 0.001,
+ 'metric': 'auc',
+ 'metrics': ['auc', 'prc-auc'],
+ 'minimize_score': False,
+ 'model_type': 'random_forest',
+ 'mpn_shared': False,
+ 'multiclass_num_classes': 3,
+ 'no_adding_bond_types': False,
+ 'no_atom_descriptor_scaling': False,
+ 'no_bond_descriptor_scaling': False,
+ 'no_cache_mol': False,
+ 'no_cuda': False,
+ 'no_features_scaling': False,
+ 'no_shared_atom_bond_ffn': False,
+ 'num_bits': 2048,
+ 'num_folds': 10,
+ 'num_lrs': 1,
+ 'num_tasks': 1,
+ 'num_trees': 500,
+ 'num_workers': 8,
+ 'number_of_molecules': 1,
+ 'overwrite_default_atom_features': False,
+ 'overwrite_default_bond_features': False,
+ 'phase_features_path': None,
+ 'pytorch_seed': 0,
+ 'quiet': False,
+ 'radius': 2,
+ 'reaction': False,
+ 'reaction_mode': 'reac_diff',
+ 'reaction_solvent': False,
+ 'resume_experiment': False,
+ 'save_dir': '/workspace/lab/stokeslab/arnolp3/ESKAPE/EF/EF_rf',
+ 'save_preds': True,
+ 'save_smiles_splits': True,
+ 'seed': 0,
+ 'separate_test_atom_descriptors_path': None,
+ 'separate_test_bond_descriptors_path': None,
+ 'separate_test_constraints_path': None,
+ 'separate_test_features_path': None,
+ 'separate_test_path': None,
+ 'separate_test_phase_features_path': None,
+ 'separate_val_atom_descriptors_path': None,
+ 'separate_val_bond_descriptors_path': None,
+ 'separate_val_constraints_path': None,
+ 'separate_val_features_path': None,
+ 'separate_val_path': None,
+ 'separate_val_phase_features_path': None,
+ 'shared_atom_bond_ffn': True,
+ 'show_individual_scores': False,
+ 'single_task': False,
+ 'smiles_columns': ['smiles'],
+ 'spectra_activation': 'exp',
+ 'spectra_phase_mask_path': None,
+ 'spectra_target_floor': 1e-08,
+ 'split_key_molecule': 0,
+ 'split_sizes': [0.8, 0.1, 0.1],
+ 'split_type': 'cv',
+ 'target_columns': None,
+ 'target_weights': None,
+ 'task_names': ['activity'],
+ 'test': False,
+ 'test_fold_index': None,
+ 'train_data_size': None,
+ 'undirected': False,
+ 'use_input_features': False,
+ 'val_fold_index': None,
+ 'warmup_epochs': 2.0,
+ 'weights_ffn_num_layers': 2}
+Setting molecule featurization parameters to default.
+Loading data
+Number of tasks = 1
+Fold 0
+Loading data
+Splitting data with seed 0
+Total size = 2,516 | train size = 2,012 | test size = 252
+Computing morgan fingerprints
+Building model
+RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=0)
+Training
+Command line
+python sklearn_train.py --data_path /workspace/lab/stokeslab/arnolp3/ESKAPE/EF/EF_processed.csv --model_type random_forest --dataset_type classification --save_dir /workspace/lab/stokeslab/arnolp3/ESKAPE/EF/EF_rf --split_type cv --num_folds 10 --save_preds --save_smiles_splits --metric auc --extra_metrics prc-auc --gpu 6
+Args
+{'activation': 'ReLU',
+ 'adding_bond_types': True,
+ 'adding_h': False,
+ 'aggregation': 'mean',
+ 'aggregation_norm': 100,
+ 'atom_constraints': [],
+ 'atom_descriptor_scaling': True,
+ 'atom_descriptors': None,
+ 'atom_descriptors_path': None,
+ 'atom_descriptors_size': 0,
+ 'atom_features_size': 0,
+ 'atom_messages': False,
+ 'atom_targets': [],
+ 'batch_size': 50,
+ 'bias': False,
+ 'bias_solvent': False,
+ 'bond_constraints': [],
+ 'bond_descriptor_scaling': True,
+ 'bond_descriptors': None,
+ 'bond_descriptors_path': None,
+ 'bond_descriptors_size': 0,
+ 'bond_features_size': 0,
+ 'bond_targets': [],
+ 'cache_cutoff': 10000,
+ 'checkpoint_dir': None,
+ 'checkpoint_frzn': None,
+ 'checkpoint_path': None,
+ 'checkpoint_paths': None,
+ 'class_balance': False,
+ 'class_weight': None,
+ 'config_path': None,
+ 'constraints_path': None,
+ 'crossval_index_dir': None,
+ 'crossval_index_file': None,
+ 'crossval_index_sets': None,
+ 'cuda': True,
+ 'data_path': '/workspace/lab/stokeslab/arnolp3/ESKAPE/EF/EF_processed.csv',
+ 'data_weights_path': None,
+ 'dataset_type': 'classification',
+ 'depth': 3,
+ 'depth_solvent': 3,
+ 'device': device(type='cuda', index=6),
+ 'dropout': 0.0,
+ 'empty_cache': False,
+ 'ensemble_size': 1,
+ 'epochs': 30,
+ 'evidential_regularization': 0,
+ 'explicit_h': False,
+ 'extra_metrics': ['prc-auc'],
+ 'features_generator': None,
+ 'features_only': False,
+ 'features_path': None,
+ 'features_scaling': True,
+ 'features_size': None,
+ 'ffn_hidden_size': 300,
+ 'ffn_num_layers': 2,
+ 'final_lr': 0.0001,
+ 'folds_file': None,
+ 'freeze_first_only': False,
+ 'frzn_ffn_layers': 0,
+ 'gpu': 6,
+ 'grad_clip': None,
+ 'hidden_size': 300,
+ 'hidden_size_solvent': 300,
+ 'ignore_columns': None,
+ 'impute_mode': None,
+ 'init_lr': 0.0001,
+ 'is_atom_bond_targets': False,
+ 'keeping_atom_map': False,
+ 'log_frequency': 10,
+ 'loss_function': 'binary_cross_entropy',
+ 'max_data_size': None,
+ 'max_lr': 0.001,
+ 'metric': 'auc',
+ 'metrics': ['auc', 'prc-auc'],
+ 'minimize_score': False,
+ 'model_type': 'random_forest',
+ 'mpn_shared': False,
+ 'multiclass_num_classes': 3,
+ 'no_adding_bond_types': False,
+ 'no_atom_descriptor_scaling': False,
+ 'no_bond_descriptor_scaling': False,
+ 'no_cache_mol': False,
+ 'no_cuda': False,
+ 'no_features_scaling': False,
+ 'no_shared_atom_bond_ffn': False,
+ 'num_bits': 2048,
+ 'num_folds': 10,
+ 'num_lrs': 1,
+ 'num_tasks': 1,
+ 'num_trees': 500,
+ 'num_workers': 8,
+ 'number_of_molecules': 1,
+ 'overwrite_default_atom_features': False,
+ 'overwrite_default_bond_features': False,
+ 'phase_features_path': None,
+ 'pytorch_seed': 0,
+ 'quiet': False,
+ 'radius': 2,
+ 'reaction': False,
+ 'reaction_mode': 'reac_diff',
+ 'reaction_solvent': False,
+ 'resume_experiment': False,
+ 'save_dir': '/workspace/lab/stokeslab/arnolp3/ESKAPE/EF/EF_rf',
+ 'save_preds': True,
+ 'save_smiles_splits': True,
+ 'seed': 0,
+ 'separate_test_atom_descriptors_path': None,
+ 'separate_test_bond_descriptors_path': None,
+ 'separate_test_constraints_path': None,
+ 'separate_test_features_path': None,
+ 'separate_test_path': None,
+ 'separate_test_phase_features_path': None,
+ 'separate_val_atom_descriptors_path': None,
+ 'separate_val_bond_descriptors_path': None,
+ 'separate_val_constraints_path': None,
+ 'separate_val_features_path': None,
+ 'separate_val_path': None,
+ 'separate_val_phase_features_path': None,
+ 'shared_atom_bond_ffn': True,
+ 'show_individual_scores': False,
+ 'single_task': False,
+ 'smiles_columns': ['smiles'],
+ 'spectra_activation': 'exp',
+ 'spectra_phase_mask_path': None,
+ 'spectra_target_floor': 1e-08,
+ 'split_key_molecule': 0,
+ 'split_sizes': [0.8, 0.1, 0.1],
+ 'split_type': 'cv',
+ 'target_columns': None,
+ 'target_weights': None,
+ 'task_names': ['activity'],
+ 'test': False,
+ 'test_fold_index': None,
+ 'train_data_size': None,
+ 'undirected': False,
+ 'use_input_features': False,
+ 'val_fold_index': None,
+ 'warmup_epochs': 2.0,
+ 'weights_ffn_num_layers': 2}
+Setting molecule featurization parameters to default.
+Loading data
+Number of tasks = 1
+Fold 0
+Loading data
+Splitting data with seed 0
+Total size = 2,516 | train size = 2,012 | test size = 252
+Computing morgan fingerprints
+Building model
+RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=0)
+Training
+Test auc = 0.8352521929824561
+Test prc-auc = 0.6543185230319835
+Fold 1
+Loading data
+Splitting data with seed 1
+Total size = 2,516 | train size = 2,012 | test size = 252
+Computing morgan fingerprints
+Building model
+RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=1)
+Training
+Test auc = 0.7756916996047432
+Test prc-auc = 0.29993872270039784
+Fold 2
+Loading data
+Splitting data with seed 2
+Total size = 2,516 | train size = 2,012 | test size = 252
+Computing morgan fingerprints
+Building model
+RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=2)
+Training
+Test auc = 0.8041849415204678
+Test prc-auc = 0.4333871954567998
+Fold 3
+Loading data
+Splitting data with seed 3
+Total size = 2,516 | train size = 2,012 | test size = 252
+Computing morgan fingerprints
+Building model
+RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=3)
+Training
+Test auc = 0.7813991769547324
+Test prc-auc = 0.48022488260449653
+Fold 4
+Loading data
+Splitting data with seed 4
+Total size = 2,516 | train size = 2,012 | test size = 252
+Computing morgan fingerprints
+Building model
+RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=4)
+Training
+Test auc = 0.7899588477366254
+Test prc-auc = 0.533143888164544
+Fold 5
+Loading data
+Splitting data with seed 5
+Total size = 2,516 | train size = 2,013 | test size = 252
+Computing morgan fingerprints
+Building model
+RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=5)
+Training
+Test auc = 0.8459030837004404
+Test prc-auc = 0.6130425175550115
+Fold 6
+Loading data
+Splitting data with seed 6
+Total size = 2,516 | train size = 2,014 | test size = 251
+Computing morgan fingerprints
+Building model
+RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=6)
+Training
+Test auc = 0.8346566097657803
+Test prc-auc = 0.5996512231779157
+Fold 7
+Loading data
+Splitting data with seed 7
+Total size = 2,516 | train size = 2,014 | test size = 251
+Computing morgan fingerprints
+Building model
+RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=7)
+Training
+Test auc = 0.7903726708074533
+Test prc-auc = 0.48700441480594575
+Fold 8
+Loading data
+Splitting data with seed 8
+Total size = 2,516 | train size = 2,014 | test size = 251
+Computing morgan fingerprints
+Building model
+RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=8)
+Training
+Test auc = 0.7209210003969829
+Test prc-auc = 0.43160922581934885
+Fold 9
+Loading data
+Splitting data with seed 9
+Total size = 2,516 | train size = 2,013 | test size = 251
+Computing morgan fingerprints
+Building model
+RandomForestClassifier(n_estimators=500, n_jobs=-1, random_state=9)
+Training
+Test auc = 0.8805982905982905
+Test prc-auc = 0.6677912219919614
+10-fold cross validation
+	Seed 0 ==> test auc = 0.835252
+	Seed 0 ==> test prc-auc = 0.654319
+	Seed 1 ==> test auc = 0.775692
+	Seed 1 ==> test prc-auc = 0.299939
+	Seed 2 ==> test auc = 0.804185
+	Seed 2 ==> test prc-auc = 0.433387
+	Seed 3 ==> test auc = 0.781399
+	Seed 3 ==> test prc-auc = 0.480225
+	Seed 4 ==> test auc = 0.789959
+	Seed 4 ==> test prc-auc = 0.533144
+	Seed 5 ==> test auc = 0.845903
+	Seed 5 ==> test prc-auc = 0.613043
+	Seed 6 ==> test auc = 0.834657
+	Seed 6 ==> test prc-auc = 0.599651
+	Seed 7 ==> test auc = 0.790373
+	Seed 7 ==> test prc-auc = 0.487004
+	Seed 8 ==> test auc = 0.720921
+	Seed 8 ==> test prc-auc = 0.431609
+	Seed 9 ==> test auc = 0.880598
+	Seed 9 ==> test prc-auc = 0.667791
+Overall test auc = 0.805894 +/- 0.042545
+Overall test prc-auc = 0.520011 +/- 0.110213

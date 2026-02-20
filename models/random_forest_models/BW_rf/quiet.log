@@ -1,0 +1,53 @@
+Fold 0
+Test auc = 0.8803339517625232
+Test prc-auc = 0.6098497388889539
+Fold 1
+Test auc = 0.8823863636363637
+Test prc-auc = 0.7067143715808839
+Fold 2
+Test auc = 0.7680731364275668
+Test prc-auc = 0.39623940758856707
+Fold 3
+Test auc = 0.8670948616600791
+Test prc-auc = 0.5737566996121181
+Fold 4
+Test auc = 0.8568192656175488
+Test prc-auc = 0.6637648552085548
+Fold 5
+Test auc = 0.7793290043290042
+Test prc-auc = 0.3417274464543779
+Fold 6
+Test auc = 0.8252288329519452
+Test prc-auc = 0.501225283985701
+Fold 7
+Test auc = 0.8122519841269841
+Test prc-auc = 0.5618038252882729
+Fold 8
+Test auc = 0.8818803418803419
+Test prc-auc = 0.5302885760771997
+Fold 9
+Test auc = 0.843109203624225
+Test prc-auc = 0.421405134065831
+10-fold cross validation
+	Seed 0 ==> test auc = 0.880334
+	Seed 0 ==> test prc-auc = 0.609850
+	Seed 1 ==> test auc = 0.882386
+	Seed 1 ==> test prc-auc = 0.706714
+	Seed 2 ==> test auc = 0.768073
+	Seed 2 ==> test prc-auc = 0.396239
+	Seed 3 ==> test auc = 0.867095
+	Seed 3 ==> test prc-auc = 0.573757
+	Seed 4 ==> test auc = 0.856819
+	Seed 4 ==> test prc-auc = 0.663765
+	Seed 5 ==> test auc = 0.779329
+	Seed 5 ==> test prc-auc = 0.341727
+	Seed 6 ==> test auc = 0.825229
+	Seed 6 ==> test prc-auc = 0.501225
+	Seed 7 ==> test auc = 0.812252
+	Seed 7 ==> test prc-auc = 0.561804
+	Seed 8 ==> test auc = 0.881880
+	Seed 8 ==> test prc-auc = 0.530289
+	Seed 9 ==> test auc = 0.843109
+	Seed 9 ==> test prc-auc = 0.421405
+Overall test auc = 0.839651 +/- 0.040057
+Overall test prc-auc = 0.530678 +/- 0.111525
