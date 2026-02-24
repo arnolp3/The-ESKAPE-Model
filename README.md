@@ -23,12 +23,14 @@ Models were trained on in-house growth inhibition screening datasets against com
 ### Repository Contents
 - Training Datasets
 - Models
-- Prediction Sets
-- Scripts to reproduce computational aspects of our work
+- Prediction sets
+- Predictions on 12 million "in-stock" molecules from the ZINC15 chemical database
+- Links to scripts used for the computational aspects of our work
   - Sanitize and binarize training data
   - Plot ROC and PRC curves
   - Generate t-SNE plots
   - k-means clustering
+- "db" folder for local predictions using the ESKAPE model
 
 ### Try the ESKAPE model yourself!
-The ESKAPE model website can be found [here](https://eskape.mcmaster.ca/). The website has a maximum input of 100 molecules. Instructions to run the ESKAPE model locally (with no input limit) can be found [here](https://github.com/raphenya/eskape-model-standalone).
+The ESKAPE model website can be found [here](https://eskape.mcmaster.ca/). The website has a maximum input of 100 molecules. Instructions to run the ESKAPE model locally (with no input limit) can be found [here](https://github.com/raphenya/eskape-model-standalone). Download the "db" folder to use the standalone script.
