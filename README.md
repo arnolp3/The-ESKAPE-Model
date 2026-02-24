@@ -21,16 +21,15 @@ Models were trained on in-house growth inhibition screening datasets against com
 - Chemprop with RDKit features
 
 ### Repository Contents
-- Training Datasets
-- Models
-- Prediction sets
+- Processed training datasets
+- Prediction datasets
 - Predictions on 12 million "in-stock" molecules from the ZINC15 chemical database
+- "db" folder containing trained models and canonicalized training data for local predictions using the ESKAPE model
 - Links to scripts used for the computational aspects of our work
   - Sanitize and binarize training data
   - Plot ROC and PRC curves
   - Generate t-SNE plots
   - k-means clustering
-- "db" folder for local predictions using the ESKAPE model
 
 ### Try the ESKAPE model yourself!
-The ESKAPE model website can be found [here](https://eskape.mcmaster.ca/). The website has a maximum input of 100 molecules. Instructions to run the ESKAPE model locally (with no input limit) can be found [here](https://github.com/raphenya/eskape-model-standalone). Download the "db" folder to use the standalone script.
+The ESKAPE model website can be found [here](https://eskape.mcmaster.ca/). The website has a maximum input of 100 molecules. To run the ESKAPE model locally (with no input limit), download the "db" folder and follow the instructions at https://github.com/raphenya/eskape-model-standalone.
